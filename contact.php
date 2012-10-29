@@ -16,7 +16,7 @@
     
 ?>
 
-Born: Checgu, Sichuan, China<br>
+Born: Chengdu, Sichuan, China<br>
 Current location: Minato-ku Tokyo, Japan.<br>
 
 <?php echo lang_getContent($lang,PIDX_CLANG_EMAIL);?>: <a href="mailto:kimryo.ultimate 'at' gmail.com">kimryo.ultimate 'at' gmail.com</a>
