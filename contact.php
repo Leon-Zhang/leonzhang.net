@@ -3,7 +3,7 @@
  require("common.php");
  
  $lang=ReadGETnPOSTParam("lang",DEFLANG_NAME);
- $langMgr=new CLangMgr();
+ $langMgr=new CLangMgr($lang);
 
 ?>
 <html>
