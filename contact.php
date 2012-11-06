@@ -16,7 +16,7 @@
     
 ?>
 
-<b>Born:</b> Checgu, Sichuan, China<br>
+<b>Born:</b> Chengdu, Sichuan, China<br>
 <b>Current location:</b> Minato-ku Tokyo, Japan.<br>
 
 <?php echo $langMgr->getContent(PIDX_CLANG_EMAIL);?>: <a href="mailto:kimryo.ultimate 'at' gmail.com">kimryo.ultimate 'at' gmail.com</a>
