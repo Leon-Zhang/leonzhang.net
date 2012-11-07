@@ -16,11 +16,13 @@
     
 ?>
 
-<p><?php echo $langMgr->getFileContent(IDX_LANG_INFO);?></p>
+<p><b><?php echo $langMgr->getFileContent(IDX_LANG_INFO);?></b></p><br>
 <b>Born:</b> Chengdu, Sichuan, China<br>
 <b>Current location:</b> Minato-ku Tokyo, Japan.<br>
 
 <b><?php echo $langMgr->getContent(PIDX_CLANG_EMAIL);?>:</b> <a href="mailto:kimryo.ultimate 'at' gmail.com">kimryo.ultimate 'at' gmail.com</a><br>
+
+<p><b><?php echo $langMgr->getContent(PIDX_CLANG_SOCIAL);?></b></p>
 <a href="https://twitter.com/Leon_Zh" title="<?php echo $langMgr->getContent(PIDX_CLANG_TWITTER);?>" target="_blank"><?php echo $langMgr->getContent(PIDX_CLANG_TWITTER);?></a><br>
 <a href="http://Gplus.to/LeonZhang" title="Google+" target="_blank">Google+</a><br>
 <a href="http://jp.linkedin.com/pub/leon-zhang/3a/271/160" title="LinkedIn" target="_blank">LinkedIn</a><br>
