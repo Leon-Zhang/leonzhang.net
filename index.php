@@ -1,6 +1,9 @@
 <?php
  
- require("common.php");
+    require("common.php");
+    
+    $lang=ReadGETnPOSTParam("lang",DEFLANG_NAME);
+    $langMgr=new CLangMgr($lang,"");
 
  if(Tweet("Leon_Zh","kim0110","Tweet from php.")==TRUE)
     echo "Tweet success";
