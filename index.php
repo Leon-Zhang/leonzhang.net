@@ -11,7 +11,7 @@
 
 <html>
 <head>
-<title><?php echo "";?></title>
+<title><?php echo $langMgr->getFileContent(IDX_LANG_IDXTITLE);?></title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     $result = $httpReq->sendPost("http://maps.googleapis.com/maps/api/directions/json?origin=Chicago,IL&destination=Los+Angeles,CA&waypoints=Joplin,MO|Oklahoma+City,OK&sensor=false",null);
     $resultArray = $httpReq->getInfo();
     
-    echo var_dump(json_decode($result));
+    var_dump(json_decode($result));
     echo $resultArray['http_code'];
 ?>
 
