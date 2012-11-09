@@ -24,8 +24,11 @@
     $httpReq->setOpt(CURLOPT_RETURNTRANSFER, 1);
     //$httpReq->setOpt(CURLOPT_POSTFIELDS, "status=$status");
     //$httpReq->setOpt(CURLOPT_USERPWD, "$login_user:$pwd");
-    
-    $result = $httpReq->sendPost("http://maps.googleapis.com/maps/api/directions/json?origin=Chicago,IL&destination=Los+Angeles,CA&waypoints=Joplin,MO|Oklahoma+City,OK&sensor=false",null);
+   
+    //39.7391536,-104.9847034|36.455556,-116.866667
+	//$url="http://maps.googleapis.com/maps/api/directions/json?origin=Chicago,IL&destination=Los+Angeles,CA&waypoints=Joplin,MO|Oklahoma+City,OK&sensor=false";
+	$url="http://maps.googleapis.com/maps/api/directions/json?origin=39.7391536,-104.9847034&destination=36.455556,-116.866667&sensor=false";
+    $result = $httpReq->sendPost($url,null);
     $resultArray = $httpReq->getInfo();
     
     var_dump(json_decode($result));
