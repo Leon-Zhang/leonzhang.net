@@ -1,6 +1,6 @@
 <?php
  
-    require("common.php");
+    require_once("common.php");
     
     $lang=ReadGETnPOSTParam("lang",DEFLANG_NAME);
     $langMgr=new CLangMgr($lang,"");
