@@ -35,5 +35,6 @@
     echo $resultArray['http_code'];
 ?>
 
+<?php require("footer.php");?>
 </body>
 </html>
