@@ -24,7 +24,7 @@
 
 for ($row = 0; $row < 4; $row++){
 //foreach($TRANSIMG_PATHS as $org => $dst => $name){
- if(!file_exists($TRANSIMG_PATHS[$row][1])){
+ if(!file_exists($TRANSIMG_PATHS[$row][1]) && function_exists("imagefilter")){
   $img = imagecreatefrompng($TRANSIMG_PATHS[$row][0]);
   if($img && imagefilter($img,IMG_FILTER_GRAYSCALE)){
    imagepng($img,$TRANSIMG_PATHS[$row][1]);
