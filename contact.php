@@ -8,6 +8,7 @@
 ?>
 <html>
 <head>
+<meta http- equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="default.css" media="screen" />
 <!-- Place this tag after the last +1 button tag. -->
 <script type="text/javascript">
@@ -21,6 +22,7 @@
 </head>
 
 <body>
+<div id="social_links">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
          var js, fjs = d.getElementsByTagName(s)[0];
@@ -36,6 +38,7 @@
 
 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/Share" data-counter="right"></script>
+</div>
 
 <br>
 
