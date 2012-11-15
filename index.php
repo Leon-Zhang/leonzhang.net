@@ -14,6 +14,7 @@
 
 <html>
 <head>
+<meta http- equiv="Content-Type" content="text/html; charset=utf-8">
 <title><?php echo $langMgr->getFileContent(IDX_LANG_IDXTITLE);?></title>
 </head>
 
@@ -31,7 +32,7 @@
     $result = $httpReq->sendPost($url,null);
     $resultArray = $httpReq->getInfo();
     
-    var_dump(json_decode($result));
+    echo nl2br($result);
     echo $resultArray['http_code'];
 ?>
 
