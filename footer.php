@@ -16,9 +16,7 @@
 ?>
 
 <br><br><p>
-<div align="center">
-© leonzh.net <?php echo date("Y");?>
-</div>
+<div align="center">© leonzh.net <?php echo date("Y");?></div>
 <div align="center">
 <?php 
 
@@ -32,7 +30,7 @@ for ($row = 0; $row < 4; $row++){
   }
  }
  if(file_exists($TRANSIMG_PATHS[$row][1])){
-  echo "<a href='".$SOCIAL_URLS[$TRANSIMG_PATHS[$row][2]]."' target='_blank'><img src='".$TRANSIMG_PATHS[$row][1]."' /></a>&nbsp;";
+  echo "<a href='".$SOCIAL_URLS[$TRANSIMG_PATHS[$row][2]]."' target='_blank'><img src='".$TRANSIMG_PATHS[$row][1]."' width='16' height='16'/></a>&nbsp;";
  }
 }
 ?>
