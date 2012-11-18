@@ -10,6 +10,7 @@
     define("IDX_LANG_CURLOC_VAL",4);
     define("IDX_LANG_IDXTITLE",5);
     define("IDX_LANG_PROJECTSTITLE",6);
+	define("IDX_LANG_SHAREWITHSOCIAL",7);
 	
 	
 	define("SOCIAL_ICON_WIDTH",32);

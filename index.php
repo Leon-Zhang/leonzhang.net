@@ -12,13 +12,16 @@
 
 ?>
 
-<html>
+<html lang="<?php echo $lang;?>">
 <head>
 <meta http- equiv="Content-Type" content="text/html; charset=utf-8">
+
 <title><?php echo $langMgr->getFileContent(IDX_LANG_IDXTITLE);?></title>
 </head>
 
 <body>
+<?php require("header.php");?>
+
 <?php
     $httpReq=new CHttpReq;
     $httpReq->setOpt(CURLOPT_CONNECTTIMEOUT, 2);
@@ -32,7 +35,18 @@
     $result = $httpReq->sendPost($url,null);
     $resultArray = $httpReq->getInfo();
     
-    echo nl2br($result);
+    //echo nl2br($result);
+	$jsonIterator = new RecursiveIteratorIterator(
+    new RecursiveArrayIterator(json_decode($result, TRUE)),
+    RecursiveIteratorIterator::SELF_FIRST);
+
+	foreach ($jsonIterator as $key => $val) {
+    if(is_array($val)) {
+        echo "$key:<br>";
+    } else {
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;$key => $val<br>";
+    }
+}
     echo $resultArray['http_code'];
 ?>
 

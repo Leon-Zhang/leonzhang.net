@@ -22,6 +22,8 @@
 </head>
 
 <body>
+<?php require("header.php");?>
+
 <div id="social_links">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
