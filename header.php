@@ -12,14 +12,41 @@
 <!--<script language="javascript" src="../web_main/js/FloatLayer.js"></script>-->
 <script language="javascript" src="../web_main/js/FixedLayer.js"></script>
 <script language="javascript" src="../web_main/js/gen_lib.js"></script>
+<script type="text/javascript">
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
 
 <div id="SocialBtnLayer" style="position:absolute;width:50;top:2px;right:0px;background:#FFFFFF;border:solid black 1px;padding:5px">
-<a href="javascript:ShowHideDiv('SocialLayer');" ><img src="image/social.png" title="<?php echo $langMgr->getFileContent(IDX_LANG_SHAREWITHSOCIAL);?>"/></a>
-<div id="SocialLayer" style="visibility:hidden;">Fuck</div>
+<a href="javascript:ShowHideDiv('SocialLayer');AlignElementPos('SocialLayer','SocialBtnLayer');" ><img src="image/social.png" title="<?php echo $langMgr->getFileContent(IDX_LANG_SHAREWITHSOCIAL);?>"/></a>
+</div>
+<div id="SocialLayer" style="visibility:hidden;position:absolute;border:solid">
+<!-- Place this tag after the last +1 button tag. -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>
+<?php
+    require("social.php");
+?>
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-counter="right"></script>
 </div>
 
 <script language="javascript">
 SetupFixedLayer("SocialBtnLayer");
+SetupFixedLayer("SocialLayer");
 /*new FloatLayer('SocialBtnLayer',0,0,10);
 //function detach(){
 	lay=document.getElementById('SocialBtnLayer');

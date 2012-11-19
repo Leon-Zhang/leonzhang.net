@@ -10,37 +10,12 @@
 <head>
 <meta http- equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="default.css" media="screen" />
-<!-- Place this tag after the last +1 button tag. -->
-<script type="text/javascript">
-(function() {
- var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
- po.src = 'https://apis.google.com/js/plusone.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
- })();
-</script>
+
 <title><?php echo $langMgr->getContent(PIDX_CLANG_CONTACT);?></title>
 </head>
 
 <body>
 <?php require("header.php");?>
-
-<div id="social_links">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-         fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));</script>
-<?php
-    require("social.php");
-?>
-<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/Share" data-counter="right"></script>
-</div>
 
 <br>
 
