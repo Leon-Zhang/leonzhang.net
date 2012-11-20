@@ -20,8 +20,8 @@
  })();
 </script>
 
-<div id="SocialBtnLayer" style="position:absolute;width:50;top:2px;right:0px;background:#FFFFFF;border:solid black 1px;padding:5px">
-<a href="javascript:ShowHideDiv('SocialLayer');AlignElementPos('SocialLayer','SocialBtnLayer');" ><img src="image/social.png" title="<?php echo $langMgr->getFileContent(IDX_LANG_SHAREWITHSOCIAL);?>"/></a>
+<div id="SocialBtnLayer" style="position:absolute;top:2px;right:0px;background:#FFFFFF;padding:5px">
+<a href="javascript:ShowHideDiv('SocialLayer');AlignElementPos('SocialLayer','SocialBtnLayer');" ><img width="24" height="24" src="image/social_logo.png" title="<?php echo $langMgr->getFileContent(IDX_LANG_SHAREWITHSOCIAL);?>"/></a>
 </div>
 <div id="SocialLayer" style="visibility:hidden;position:absolute;border:solid">
 <!-- Place this tag after the last +1 button tag. -->
