@@ -15,6 +15,7 @@
 <html lang="<?php echo $lang;?>">
 <head>
 <meta http- equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="default.css" media="screen" />
 
 <title><?php echo $langMgr->getFileContent(IDX_LANG_IDXTITLE);?></title>
 </head>
