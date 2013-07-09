@@ -2,7 +2,7 @@
  
  require("common.php");
 
- if(Tweet("Leon_Zh","kim0110","Tweet from php.")==TRUE)
+ if(Tweet("Leon_Zh","ur_pwd_here","Tweet from php.")==TRUE)
     echo "Tweet success";
  else
     echo "Tweet failed<br/>";
